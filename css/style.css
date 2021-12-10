@@ -1,7 +1,10 @@
-/* ------------ youtube.com/CodeExplained ------------ */
-body {
+* {
    padding: 0;
    margin: 0;
+   box-sizing: border-box;
+}
+
+body {
    /* background-color: rgba(170, 56, 56, 0.1); */
    background: linear-gradient(90deg, #4aa5cf, #3f51b8 90%);
    font-family: 'Titillium Web', sans-serif;
@@ -10,19 +13,22 @@ body {
 /* ------------ container ------------ */
 .container {
    padding: 10px;
-   width: 380px;
-   margin: 0 auto;
+   width: 1000px;
+   margin: auto;
 }
 
 /* ------------ header ------------ */
 .header {
-   width: 380px;
-   height: 200px;
+   flex-wrap: wrap;
+   min-height: 200px;
+   width: 100%;
+   min-width: 90px;
    background-image: url('../img/bg2.jpg');
    background-size: 100% 200%;
    background-repeat: no-repeat;
    border-radius: 15px 15px 0 0;
    position: relative;
+   border: 1px solid black;
 }
 .clear {
    width: 30px;
